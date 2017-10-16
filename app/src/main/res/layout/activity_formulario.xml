@@ -1,0 +1,60 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+            <ImageView
+                android:id="@+id/formulario_foto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/person"
+                android:background="#00a8ec"/>
+            <Button
+                android:id="@+id/formulario_botao_foto"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/fundo_camera"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                />
+        </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeid"
+        android:hint="Nome"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enderecoid"
+            android:hint="endereço"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telefoneid"
+            android:hint="Telefone"/>
+        <EditText
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/siteid"
+            android:hint="site"/>
+
+       <RatingBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:numStars="5"
+           android:max="10"
+           android:id="@+id/notaestrela"
+           android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
